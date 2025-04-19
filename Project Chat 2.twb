@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet7 (Harassment-Bullying)' inline='true' name='federated.0i522gy17d6dy41cymigr1hr18s3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Harassment-Bullying' name='excel-direct.04826711j9ekck164y28z1kvfzja'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/South/Downloads/Harassment-Bullying.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.04826711j9ekck164y28z1kvfzja' name='Sheet7' table='[Sheet7$]' type='table'>
+          <columns gridOrigin='A1:C53:no:A1:C53:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Male' ordinal='0' />
+            <column datatype='integer' name='Female' ordinal='1' />
+            <column datatype='integer' name='Total' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet7]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C53:no:A1:C53:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male]</local-name>
+            <parent-name>[Sheet7]</parent-name>
+            <remote-alias>Male</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female]</local-name>
+            <parent-name>[Sheet7]</parent-name>
+            <remote-alias>Female</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[Sheet7]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Female]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Male]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+      <column caption='Sheet7' datatype='table' name='[__tableau_internal_object_id__].[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet7_64361A6AAD6542A1B0F7D8C459B5E490:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Female]' derivation='Sum' name='[sum:Female:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Male]' derivation='Sum' name='[sum:Male:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/South/AppData/Local/Temp/TableauTemp/#TableauTemp_1kh62kp0do18g511fpa8g17o4irv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/10/2025 02:08:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Male</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Male]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Male</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet7</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Female</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Female]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Female</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet7</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet7</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='red_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[__tableau_internal_object_id__].[cnt:Sheet7_64361A6AAD6542A1B0F7D8C459B5E490:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[sum:Total:qk]&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[sum:Male:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[sum:Female:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet7' id='Sheet7_64361A6AAD6542A1B0F7D8C459B5E490'>
+            <properties context=''>
+              <relation connection='excel-direct.04826711j9ekck164y28z1kvfzja' name='Sheet7' table='[Sheet7$]' type='table'>
+                <columns gridOrigin='A1:C53:no:A1:C53:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Male' ordinal='0' />
+                  <column datatype='integer' name='Female' ordinal='1' />
+                  <column datatype='integer' name='Total' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_C0651CE69DAC4509884F45C87CC87E88]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Disciplines Regarding Harassment &amp; Bullying: Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet7 (Harassment-Bullying)' name='federated.0i522gy17d6dy41cymigr1hr18s3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i522gy17d6dy41cymigr1hr18s3'>
+            <column datatype='integer' name='[Female]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Male]' role='measure' type='quantitative' />
+            <column caption='Sheet7' datatype='table' name='[__tableau_internal_object_id__].[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet7_64361A6AAD6542A1B0F7D8C459B5E490]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet7_64361A6AAD6542A1B0F7D8C459B5E490:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Female]' derivation='Sum' name='[sum:Female:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Male]' derivation='Sum' name='[sum:Male:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[__tableau_internal_object_id__].[cnt:Sheet7_64361A6AAD6542A1B0F7D8C459B5E490:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[sum:Female:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[sum:Male:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[:Measure Names]' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i522gy17d6dy41cymigr1hr18s3].[__tableau_internal_object_id__].[cnt:Sheet7_64361A6AAD6542A1B0F7D8C459B5E490:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0i522gy17d6dy41cymigr1hr18s3].[Multiple Values]' field-type='quantitative' max='10000.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0i522gy17d6dy41cymigr1hr18s3].[Multiple Values]' scope='rows' value='Number of Students Disciplined' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]' value='363' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i522gy17d6dy41cymigr1hr18s3].[Multiple Values]</rows>
+        <cols>[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{DC6F6B25-4B3F-4FB9-AB80-A66AAE136BA1}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{23D63A77-B364-4EC9-AE05-B13EB12F4327}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0i522gy17d6dy41cymigr1hr18s3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2D6E2FD0-BF3E-4647-A87D-763E5E40A72A}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38062E01-D6A4-4714-B285-7FDB7C913065}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
